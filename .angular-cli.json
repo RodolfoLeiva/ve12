@@ -21,6 +21,7 @@
       "styles": [
         "styles.css"
       ],
+      "stylePreprocessorOptions": { "includePaths": [ "../node_modules" ] },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -28,6 +29,7 @@
         "prod": "environments/environment.prod.ts"
       }
     }
+
   ],
   "e2e": {
     "protractor": {
@@ -54,4 +56,5 @@
     "styleExt": "css",
     "component": {}
   }
+
 }

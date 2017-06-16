@@ -6,20 +6,25 @@ import { AppComponent } from './app.component';
 import { sidebarComponent } from './sidebar/sidebar.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { BuscarComponent} from './cabecera/buscar/buscar.component';
-import { RouterModule } from '@angular/router';
+import { AparecesbComponent } from './sidebar/aparecesb/aparecesb.component';
+import {MdTabsModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     sidebarComponent,
     CabeceraComponent,
-    BuscarComponent
+    BuscarComponent,
+    AparecesbComponent
+  
 
   ],
   imports: [
+  MdTabsModule,
     BrowserModule,
     MaterialModule,
-  RouterModule
+    BrowserAnimationsModule
 
 
  

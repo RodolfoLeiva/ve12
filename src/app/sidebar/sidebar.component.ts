@@ -4,8 +4,8 @@ import { user } from './user';
 @Component({
 
 selector:'r-sidebar',
-templateUrl: './sidebar.component.html'
-
+templateUrl: './sidebar.component.html',
+styleUrls: ['./sidebar.component.css']
 
 })
 

@@ -1,0 +1,16 @@
+r-menuhijo {
+
+background-color: lightblue;
+padding-top: 10px;
+padding-left: 10px;
+
+}
+md-line 
+
+.mat-tab-label {
+  min-width: 1px !important;
+}
+.mat-md-nav-list
+{
+	background-color: lightblue;
+}

@@ -32,10 +32,10 @@ input::-webkit-input-placeholder {
 }
 /* Demo 2 */
 #demo-2 input[type=search] {
-	background: #efebe9 url(http://hindimasti.co/bollywood/tpl/style/search.png) no-repeat 15px center ;
+	background: #efebe9 url(../../imagenes/ic_search.png) no-repeat 12px center ;
 	outline: none;
 	width: 25px;
-	padding-left: 10px;
+	padding-left: 14px;
 	color: transparent;
 	cursor: pointer;
 }
