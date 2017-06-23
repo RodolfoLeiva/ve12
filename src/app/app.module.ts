@@ -8,15 +8,19 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { BuscarComponent} from './cabecera/buscar/buscar.component';
 import { AparecesbComponent } from './sidebar/aparecesb/aparecesb.component';
 import {MdTabsModule} from '@angular/material';
+import { routing, appRoutingProviders} from './aroutes/app.routing';
+import {dashboardComponent} from './pages/dashboard/dashboard.component';
+import {workflowComponent} from './pages/workflow/workflow.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 @NgModule({
-  declarations: [
+    declarations: [
     AppComponent,
     sidebarComponent,
     CabeceraComponent,
     BuscarComponent,
-    AparecesbComponent
+    AparecesbComponent,
+    dashboardComponent,
+    workflowComponent
   
 
   ],
@@ -24,13 +28,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   MdTabsModule,
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule
-
-
- 
+    routing,
+     BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

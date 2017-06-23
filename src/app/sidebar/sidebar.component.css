@@ -14,3 +14,9 @@ md-line
 {
 	background-color: lightblue;
 }
+.left {
+	padding-top: 6px;
+}
+.collapsible-header {
+	padding-left: 60px;	
+}
