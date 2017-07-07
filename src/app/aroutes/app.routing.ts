@@ -6,11 +6,14 @@ import {Routes, RouterModule} from '@angular/router';
 
 import {dashboardComponent} from '../pages/dashboard/dashboard.component';
 import {workflowComponent} from '../pages/workflow/workflow.component';
+import {poComponent} from '../pages/po/po.component';
+
 
 const appRoutes	: Routes = [
 	{path:'',component : dashboardComponent},
 	{path:'dashboard',component : dashboardComponent},
-	{path:'workflow',component : workflowComponent}
+	{path:'workflow',component : workflowComponent},
+	{path:'pedidos',component : poComponent}
 
 ];
 export const appRoutingProviders: any [] = [];

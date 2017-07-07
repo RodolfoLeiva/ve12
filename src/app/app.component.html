@@ -1,13 +1,13 @@
 
-
+<div class="page">
 <md-sidenav-container class="example-container  ">
   <md-sidenav #sidenav class="example-sidenav ">
       <r-sidebar></r-sidebar>
   </md-sidenav>
 
-<div class="brown lighten-4" style="position: fixed;">
-<div class="navbar-fixed"style="position: fixed;">
-      <nav class="amber darken-3 z-depth-3 navbar-fixed" >
+<div class="brown lighten-4" >
+<div >
+      <nav class="amber darken-3 z-depth-3" >
           <div class="nav-wrapper">
           
           <ul class="left col s12 ">
@@ -16,23 +16,31 @@
               <li style="padding-left: 15px;"><r-buscar></r-buscar><li>
           </ul>
            <ul class="right ">
-              <li><a href="badges.html"><i class="material-icons">grid_on</i></a></li>
-              <li><a href="collapsible.html"><i class="material-icons">notifications_none</i></a></li>
+              <li><a [routerLink]="['/dashboard']" [routerLinkActive]="['activado']"><i class="material-icons">dashboard</i></a></li>
+              <li><a [routerLink]="['/workflow']" [routerLinkActive]="['activado']"><i class="material-icons">notifications_none</i></a></li>
               
-              <li><button md-icon-button class="amber darken-3"[mdMenuTriggerFor]="menu">
+              <li style="padding-right:15px"><button md-icon-button class="amber darken-3"[mdMenuTriggerFor]="menu">
                       <md-icon>person_outline</md-icon>
                     </button>
-                    <md-menu #menu="mdMenu">
-                    <button md-menu-item disabled>
+                    <md-menu  #menu="mdMenu"  x-position="after" y-position="above">
+                    <button md-menu-item  disabled >
                         
-                        <span>Usuario : Rodolfo Leiva</span>
+                      <md-icon style="font-size: 30px; padding:-8px">account_circle</md-icon> <span style=" padding-top:24px"> Rodolfo Leiva </span>
                       </button>
                       <button md-menu-item>
-                        <md-icon>build</md-icon>
+                        <md-icon style="font-size: 18px; padding-top:4px">settings</md-icon>
                         <span style="font-size: 13px">Configurar</span>
                       </button>
+                       <button md-menu-item >
+                        <md-icon style="font-size: 18px; padding-top:4px">camera_roll</md-icon>
+                        <span style="font-size: 13px">Historial</span>
+                      </button>
                       <button md-menu-item >
-                        <md-icon>exit_to_app</md-icon>
+                        <md-icon style="font-size: 18px; padding-top:4px">lock</md-icon>
+                        <span style="font-size: 13px">Bloquear</span>
+                      </button>
+                      <button md-menu-item >
+                        <md-icon style="font-size: 18px; padding-top:4px">exit_to_app</md-icon>
                         <span style="font-size: 13px">Salir</span>
                       </button>
                       
@@ -41,8 +49,11 @@
             </ul> 
            </div> 
           
-      </nav></div>
+      </nav>
+    </div>
  </div>
+
+ <div class="page-content">
 <router-outlet></router-outlet>
 
  <footer class="page-footer brown lighten-3">
@@ -61,6 +72,7 @@
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
-        </footer>
-
+</footer>
+</div >
 </md-sidenav-container>
+</div>

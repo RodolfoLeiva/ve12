@@ -1,5 +1,3 @@
-
-
 'use estrict'
 import { Component } from '@angular/core' ;
 
@@ -7,7 +5,11 @@ import { Component } from '@angular/core' ;
 
 selector:'r-workflow',
 templateUrl: './workflow.component.html',
-//styleUrls: ['./sidebar.component.css']
+
+styleUrls: [
+		//'./workflow.component.css'
+       // '../../../../node_modules/@progress/kendo-theme-default/dist/all.css'
+    ],
 
 })
 export class workflowComponent	 {

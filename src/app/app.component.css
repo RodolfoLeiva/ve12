@@ -1,9 +1,39 @@
+
+
+
 md-sidenav {
   width: 170px;
 }
+.activado {
+	background-color: #ff6f00;
 
-r-container{
-  padding-top:0,8em;
-  padding-left: 0,1em;
-  padding-right: 0,1em;
+}
+
+
+html,
+body,
+.page {
+
+}
+
+body {
+
+}
+
+
+
+.page {
+ 
+}
+
+.page-header {
+  
+}
+
+.page-content {
+ 
+}
+
+.page-footer {
+ 
 }
