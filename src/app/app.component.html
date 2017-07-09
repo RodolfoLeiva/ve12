@@ -2,16 +2,84 @@
 <div class="page">
 <md-sidenav-container class="example-container  ">
   <md-sidenav #sidenav class="example-sidenav ">
-      <r-sidebar></r-sidebar>
+      <div style="height: 80px;">
+ <h5 style="text-align:center" class="Grey-text darken-3 bold" >Vision Ejecutiva</h5>
+ <md-icon>menu</md-icon>
+</div>
+       <md-divider></md-divider>
+
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect waves-orange no-padding orange-text  ">Compras <i class="material-icons">shopping_cart</i></a>
+            <div class="collapsible-body no-padding">
+              <ul>
+                    <md-nav-list class=" grey lighten-3">
+                      <md-list-item>
+                         <a  class="grey-text  text-darken-2" style="padding-left: 15px;" md-line href="..."><h6>Contratos</h6></a><md-icon class="grey-text  text-lighten-1">folder</md-icon>
+                      </md-list-item>
+                      <md-list-item>
+                         <a class="grey-text  text-darken-2" style="padding-left: 15px;" md-line href="..."><h6>Pedidos</h6></a><md-icon class="grey-text  text-lighten-1">shopping_cart</md-icon>
+                      </md-list-item>
+                     <md-list-item>
+                         <a class="grey-text  text-darken-2" style="padding-left: 15px;" md-line href="..."><h6>Solicitudes</h6></a><md-icon class="grey-text  text-lighten-1">shopping_basket</md-icon>
+                      </md-list-item>
+                   </md-nav-list>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect waves-orange no-padding orange-text darken-2">Personas <i class="material-icons">supervisor_account</i></a>
+            <div class="collapsible-body no-padding">
+              <ul>
+                   <md-nav-list class=" grey lighten-3 ">
+                    <div>
+                      <md-list-item>
+                         <a class="grey-text  text-darken-2" md-line style="padding-left: 15px;" href="..."> <h6>Fichas</h6></a><md-icon class="grey-text  text-lighten-1">picture_in_picture</md-icon>
+                      </md-list-item>
+                      </div>
+                     <md-list-item>
+                         <a class="grey-text  text-darken-3" md-line  style="padding-left: 15px;" href="..."><h6>Rendiciones</h6></a><md-icon class="grey-text  text-lighten-1"> local_atm</md-icon>
+                      </md-list-item>
+                   
+                   <md-list-item>
+                         <a class="grey-text  text-darken-3" md-line  style="padding-left: 15px;" href="..."><h6>vacaciones</h6></a><md-icon class="grey-text  text-lighten-1"> airplanemode_active</md-icon>
+                      </md-list-item>
+                   </md-nav-list>
+              </ul>
+            </div>
+          </li>
+           <li>
+            <a class="collapsible-header waves-effect waves-orange no-padding orange-text darken-2">Presupuestos <i class="material-icons">equalizer</i></a>
+            <div class="collapsible-body no-padding">
+              <ul>
+                   <md-nav-list class=" grey lighten-3 ">
+                    <div>
+                      <md-list-item>
+                         <a class="grey-text  text-darken-2" md-line style="padding-left: 15px;" href="..."> <h6>Fichas</h6></a><md-icon class="grey-text  text-lighten-1">picture_in_picture</md-icon>
+                      </md-list-item>
+                      </div>
+                     <md-list-item>
+                         <a class="grey-text  text-darken-3" md-line  style="padding-left: 15px;" href="..."><h6>Rendiciones</h6></a><md-icon class="grey-text  text-lighten-1"> local_atm</md-icon>
+                      </md-list-item>
+                  
+                   <md-list-item>
+                         <a class="grey-text  text-darken-3" md-line  style="padding-left: 15px;" href="..."><h6>vacaciones</h6></a><md-icon class="grey-text  text-lighten-1"> airplanemode_active</md-icon>
+                      </md-list-item>
+                   </md-nav-list>
+              </ul>
+            </div>
+          </li>
+          
+        </ul>
   </md-sidenav>
 
 <div class="brown lighten-4" >
 <div >
-      <nav class="amber darken-3 z-depth-3" >
+      <nav [style.background]="rcolor.colorbase" class="z-depth-3" >
           <div class="nav-wrapper">
           
           <ul class="left col s12 ">
-             <li style="padding-left: 15px;"><button  class="amber darken-3 z-depth-2"   md-icon-button (click)="sidenav.open()"><md-icon>menu</md-icon></button></li>    
+             <li style="padding-left: 15px;"><button  [style.background]="rcolor.colorbase" class=" z-depth-2"   md-icon-button (click)="sidenav.open()"><md-icon>menu</md-icon></button></li>    
              
               <li style="padding-left: 15px;"><r-buscar></r-buscar><li>
           </ul>
@@ -19,7 +87,7 @@
               <li><a [routerLink]="['/dashboard']" [routerLinkActive]="['activado']"><i class="material-icons">dashboard</i></a></li>
               <li><a [routerLink]="['/workflow']" [routerLinkActive]="['activado']"><i class="material-icons">notifications_none</i></a></li>
               
-              <li style="padding-right:15px"><button md-icon-button class="amber darken-3"[mdMenuTriggerFor]="menu">
+              <li style="padding-right:15px"><button md-icon-button [style.background]="rcolor.colorbase" [mdMenuTriggerFor]="menu">
                       <md-icon>person_outline</md-icon>
                     </button>
                     <md-menu  #menu="mdMenu"  x-position="after" y-position="above">

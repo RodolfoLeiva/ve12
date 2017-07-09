@@ -11,13 +11,14 @@ import {MdTabsModule} from '@angular/material';
 import { routing, appRoutingProviders} from './aroutes/app.routing';
 import {dashboardComponent} from './pages/dashboard/dashboard.component';
 import {workflowComponent} from './pages/workflow/workflow.component';
-import {tableroworkflowComponent} from './pages/workflow/tableroworkflow/tableroworkflow.component';
+import {tableroworkflowComponent } from './pages/workflow/tableroworkflow/tableroworkflow.component';
 import {poComponent} from './pages/po/po.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 
 // Imports the PanelBar
 import { PanelBarModule } from '@progress/kendo-angular-layout';
+import { DialogModule } from '@progress/kendo-angular-dialog';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import { PanelBarModule } from '@progress/kendo-angular-layout';
     dashboardComponent,
     workflowComponent,
     poComponent,
-    tableroworkflowComponent,
+    tableroworkflowComponent
+    
   
   ],
   imports: [
@@ -39,10 +41,11 @@ import { PanelBarModule } from '@progress/kendo-angular-layout';
     routing,
     CommonModule ,
      BrowserAnimationsModule,
-     PanelBarModule
+     PanelBarModule,
+     DialogModule 
 
   ],
-  providers: [appRoutingProviders],
-  bootstrap: [AppComponent]
+  providers: [appRoutingProviders ],
+  bootstrap: [AppComponent ]
 })
 export class AppModule { }
